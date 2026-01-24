@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - UI/UX Design</title>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">PORTFOLIO</div>
+
+            <!-- Hamburger Menu Icon (Mobile Only) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="../pages/about.html" class="nav-link">About</a></li>
+                <li><a href="../pages/case_studies.html" class="nav-link">Case Studies</a></li>
+                <li><a href="" class="nav-link active">Contact</a></li>
+                <li class="mobile-contact"><a href="./credentials.html" class="btn-contact">Credentials</a></li>
+            </ul>
+
+            <!-- Desktop Contact Button -->
+            <a href="./credentials.html" class="btn-contact desktop-contact">Credentials</a>
+        </nav>
+    </header>
+
+<section class="contact-section">
+    <div class="contact-grid">
+        
+        <h1 class="main-title reveal">
+            Let’s build something together
+        </h1>
+
+        <div class="description-box reveal">
+            <p>I'm currently available for new projects. If you're looking for a digital designer, let's talk about your next big idea.</p>
+        </div>
+
+        <div class="footer-contact reveal">
+            <div class="arrow-down" style="margin-left: -10rem;">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 7L17 17M17 17V7M17 17H7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <a href="mailto:ianreyporras72@gmail.com" class="email-text">ianreyporras72@gmail.com</a>
+            <div class="social-row">
+                                    <a href="https://www.instagram.com/thisis.eyyan/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/porras-ian-rey-3172133a8/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("reveal-active");
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+});
+    </script>
+    <script src="../script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - UI/UX Design</title>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/case_studies.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">PORTFOLIO</div>
+
+            <!-- Hamburger Menu Icon (Mobile Only) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="../pages/about.html" class="nav-link">About</a></li>
+                <li><a href="#casestudies" class="nav-link active">Case Studies</a></li>
+                <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+                <li class="mobile-contact"><a href="./credentials.html" class="btn-contact">Credentials</a></li>
+            </ul>
+
+            <!-- Desktop Contact Button -->
+            <a href="./credentials.html" class="btn-contact desktop-contact">Credentials</a>
+        </nav>
+    </header>
+
+    <main class="case-study-hero">
+        <section class="portfolio-header">
+            <div class="image-stack">
+                <img src="../img/me.png" alt="Ian Rey" class="main-photo">
+            </div>
+
+            <div class="title-content">
+                <h1 class="giant-text">PORTFOLIO</h1>
+                <h2 class="person-name">Porras, Ian Rey D.</h2>
+                <p class="role-goal">Goal Being Web Designer</p>
+            </div>
+        </section>
+
+        <section class="bio-software-grid">
+            <div class="bio-column">
+                <p>
+                    With a keen eye for aesthetics and a deep understanding of user behavior, I design
+                    brands and interfaces that not only look great but also resonate with audiences.
+                    Whether it's building a brand identity from the ground up or refining a digital
+                    product for seamless usability, I blend creativity and functionality to bring
+                    ideas to life. Let's collab and make something extraordinary.
+                </p>
+            </div>
+
+            <div class="software-column">
+                <div class="software-header">Software</div>
+                <div class="software-icons">
+                    <div class="icon-box">
+                        <img src="../img/figma.png" alt="Figma">
+                    </div>
+
+                    <div class="icon-box">
+                        <img src="../img/canva.png" alt="Canva">
+                    </div>
+
+                    <div class="icon-box">
+                        <img src="../img/vscode.png" alt="VS Code">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <section class="collage-section">
+
+        <div class="collage reveal img-1">
+            <img src="../img/1 design.png" alt="">
+        </div>
+
+        <div class="collage reveal img-2">
+            <img src="../img/2 design.png" alt="">
+        </div>
+
+        <div class="collage reveal img-3">
+            <img src="../img/7 design.png" alt="">
+        </div>
+
+        <div class="collage reveal img-4">
+            <img src="../img/3 design.png" alt="">
+        </div>
+
+        <div class="collage reveal img-5">
+            <img src="../img/5 design.png" alt="">
+        </div>
+
+        <div class="collage reveal img-6">
+            <img src="../img/6 design.png" alt="">
+        </div>
+
+        <div class="collage reveal img-7">
+            <img src="../img/4 design.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="recent-projects">
+        <div class="header-line"></div>
+        <h1 class="section-title">Recent Project</h1>
+
+        <div class="project-grid" id="projectGrid">
+            <div class="grid-item"><img src="../img/10 design.png" alt="Design 1"></div>
+            <div class="grid-item"><img src="../img/8 design.png" alt="Design 2"></div>
+            <div class="grid-item"><img src="../img/2 design.png" alt="Design 3"></div>
+            <div class="grid-item"><img src="../img/6 design.png" alt="Design 4"></div>
+            <div class="grid-item"><img src="../img/4 design.png" alt="Design 5"></div>
+            <div class="grid-item"><img src="../img/1 design.png" alt="Design 6"></div>
+
+            <div class="grid-item hidden extra-content"><img src="../img/5 design.png" alt="Design 7"></div>
+            <div class="grid-item hidden extra-content"><img src="../img/3 design.png" alt="Design 8"></div>
+            <div class="grid-item hidden extra-content"><img src="../img/9 design.png" alt="Design 9"></div>
+            <div class="grid-item hidden extra-content"><img src="../img/7 design.png" alt="Design 10"></div>
+            <div class="grid-item hidden extra-content"><img src="../img/11 design.png" alt="Design 11"></div>
+            <div class="grid-item hidden extra-content"><img src="../img/12 design.png" alt="Design 12"></div>
+        </div>
+
+        <button class="cta-button" id="loadMoreBtn">See the 20% Growth</button>
+    </section>
+
+    <div class="zoom-overlay" id="zoomOverlay">
+        <img src="" alt="Zoomed View" id="zoomedImg">
+    </div>
+
+
+
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>ianreyporras72@gmail.com</p>
+                <p>0991 384 2335 - DITO</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ianrey.porras.52" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/thisis.eyyan/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/porras-ian-rey-3172133a8/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-cta">
+                <h2>Got a project here. Interested in a collab?</h2>
+                <a href="#" class="btn-discuss">
+                    Design — Directed by Me<span>▶</span>
+                </a>
+            </div>
+
+            <div class="footer-location">
+                <p><strong>Philippines</strong></p>
+                <p>Hopeland GreenValley Molino 2,<br>Bacoor Cavite</p>
+            </div>
+        </div>
+
+        <div class="footer-big-text">
+            <h1>Let's spark an idea</h1>
+        </div>
+    </footer>
+    <script>// 1. Zoom Logic
+        const gridItems = document.querySelectorAll('.grid-item img');
+        const overlay = document.getElementById('zoomOverlay');
+        const zoomedImg = document.getElementById('zoomedImg');
+
+        gridItems.forEach(img => {
+            img.addEventListener('click', () => {
+                zoomedImg.src = img.src; // Set overlay image to clicked image source
+                overlay.style.display = 'flex';
+            });
+        });
+
+        overlay.addEventListener('click', () => {
+            overlay.style.display = 'none'; // Close overlay
+        });
+
+        // 2. Button Toggle Logic (Show 7th Image)
+        const loadBtn = document.getElementById('loadMoreBtn');
+        const extraImage = document.getElementById('extraImage');
+
+        loadBtn.addEventListener('click', () => {
+            extraImage.classList.toggle('hidden');
+
+            // Optional: Change button text
+            if (extraImage.classList.contains('hidden')) {
+                loadBtn.innerText = "See the 20% Growth";
+            } else {
+                loadBtn.innerText = "Show Less";
+            }
+        });</script>
+
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

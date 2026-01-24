@@ -1,0 +1,454 @@
+/* =====================
+   ROOT & RESET
+===================== */
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../fonts/MyCustomFont.woff2') format('woff2'),
+       url('../fonts/MyCustomFont.woff') format('woff');
+  font-weight: 800; /* optional: match your logo weight */
+  font-style: normal;
+  font-display: swap; /* ensures text shows quickly while font loads */
+}
+
+:root {
+  font-size: 100%; /* 1rem = 16px (browser default) */
+  --primary-color: #10367D;
+  --secondary-color: #74B4DA;
+  --text-color: #333;
+  --background-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --transition-speed: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #EBEBEB;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+/* =====================
+   HEADER & NAVBAR
+===================== */
+header {
+  width: 90%;
+  max-width: 60rem; /* ~1000px */
+  position: relative;
+  z-index: 100;
+}
+
+.navbar {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  border-radius: 3rem;
+  box-shadow: 0 0.25rem 1rem var(--shadow-color);
+  position: relative;
+}
+
+.logo {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-weight: 500; 
+  font-size: 1.5rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+
+
+/* Hamburger Menu Button (Mobile) */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 101;
+}
+
+.hamburger .material-icons {
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-left: 15rem;
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  transition: color var(--transition-speed) ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-links a.active {
+  border-bottom: 0.2rem solid var(--primary-color);
+  padding-bottom: 0.25rem;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+}
+
+/* Desktop Contact Button */
+.btn-contact.desktop-contact {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 3rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color var(--transition-speed) ease;
+}
+
+.btn-contact.desktop-contact:hover {
+  background-color: #0f2a66;
+}
+
+.mobile-contact {
+  display: none;
+}
+
+
+/* =====================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+===================== */
+
+/* Tablet (hamburger menu appears) */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background-color: var(--background-color);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5rem 2rem 2rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    z-index: 100;
+  }
+  
+  .nav-links.active {
+    transform: translateX(0);
+  }
+  
+  .nav-links li {
+    width: 100%;
+  }
+  
+  .nav-links a {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+  }
+  
+  .nav-links a.active {
+    border-bottom: 0.2rem solid var(--primary-color);
+  }
+  
+  .mobile-contact {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .mobile-contact .btn-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  
+  .desktop-contact {
+    display: none;
+  }
+  
+  /* Overlay for mobile menu */
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+    z-index: 99;
+  }
+  
+  .nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .announcement-badge {
+    font-size: 0.7rem;
+  }
+  
+  .badge-tag {
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .announcement-badge {
+    font-size: 0.60rem;
+  }
+  
+  .badge-tag {
+    padding: 0.35rem 0.7rem;
+  }
+}
+/* Small Mobile */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  .nav-links {
+    width: 85%;
+  }
+  .announcement-badge {
+    font-size: 0.5rem;
+    padding: 0.25rem 0.1rem;
+  }
+  
+  .badge-tag {
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .announcement-badge {
+    font-size: 0.35rem;
+  }
+  
+  .badge-tag {
+    padding: 0.25rem 0.5rem;
+  }
+}
+/* Desktop */
+@media (min-width: 769px) {
+  .hero {
+    margin-top: 6rem;
+  }
+}
+
+/* Tablet (landscape) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-links {
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+  
+  .btn-contact.desktop-contact {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+:root {
+    --bg-light: #e9e9e9;
+    --text-black: #000000;
+    /* Clamping for perfect scaling */
+    --h1-size: clamp(3rem, 10vw, 7.5rem);
+    --body-size: clamp(0.85rem, 1.2vw, 1rem);
+    --email-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.contact-section {
+    background-color: var(--bg-light);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 5%;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Big Title - spans left side */
+.main-title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-family: 'Arial Black', sans-serif;
+    font-size: var(--h1-size);
+    line-height: 0.9;
+    margin: 0;
+    text-transform: none;
+}
+
+/* Description - Top right */
+.description-box {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: end;
+    text-align: left;
+    max-width: 320px;
+}
+
+.description-box p {
+    font-size: var(--body-size);
+    line-height: 1.4;
+    color: #333;
+}
+
+/* Footer Contact - Centered across the bottom */
+.footer-contact {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.email-text {
+    font-size: var(--email-size);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-black);
+    transition: opacity 0.3s;
+}
+
+.email-text:hover { opacity: 0.5; }
+
+.social-row {
+    display: flex;
+    gap: 15px;
+}
+
+.social-row a { color: var(--text-black); }
+
+/* Animation Logic */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.reveal-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Fix */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .description-box {
+        grid-column: 1;
+        justify-self: start;
+        margin-top: 30px;
+    }
+}
+
+/* =====================
+    MOBILE RESPONSIVE FIX
+   ===================== */
+@media screen and (max-width: 900px) {
+    .contact-section {
+        padding: 60px 20px; /* Reduced padding for mobile */
+    }
+
+    .contact-grid {
+        display: flex; /* Switch grid to flex-direction for easier stacking */
+        flex-direction: column;
+        align-items: flex-start; /* Align everything to the left for a clean look */
+        gap: 40px;
+    }
+
+    .main-title {
+        width: 100%;
+        text-align: left;
+        /* Force a smaller clamp range for mobile specifically */
+        font-size: clamp(2.5rem, 12vw, 4rem); 
+        line-height: 1.1;
+    }
+
+    .description-box {
+        width: 100%;
+        max-width: 100%; /* Let it take full width on mobile */
+        text-align: left;
+        order: 2; /* Positions the paragraph below the title */
+    }
+
+    .footer-contact {
+        width: 100%;
+        margin-top: 40px;
+        order: 3;
+        align-items: center; /* Keep the email and socials centered at the very bottom */
+        text-align: center;
+    }
+
+    /* Adjust the arrow for mobile */
+    .arrow-down {
+        transform: rotate(45deg); /* Points it more toward the email on mobile */
+        margin-bottom: 10px;
+    }
+}

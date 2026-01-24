@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - UI/UX Design</title>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">PORTFOLIO</div>
+
+            <!-- Hamburger Menu Icon (Mobile Only) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="./asset/pages/about.html" class="nav-link">About</a></li>
+                <li><a href="./asset/pages/case_studies.html" class="nav-link">Case Studies</a></li>
+                <li><a href="./asset/pages/contact.html" class="nav-link">Contact</a></li>
+                <li class="mobile-contact"><a href="./asset/pages/credentials.html" class="btn-contact">Credentials</a></li>
+            </ul>
+
+            <!-- Desktop Contact Button -->
+            <a href="./asset/pages/credentials.html" class="btn-contact desktop-contact">Credentials</a>
+        </nav>
+    </header>
+
+    <main class="hero" id="home">
+        <div class="announcement-badge">
+            <span class="badge-tag">Read ↗</span>
+            <span class="badge-text">See how I craft websites that stand out. Learn more about my story <a href="./asset/pages/credentials.html"> Click to find out
+                    more <span class="material-icons">arrow_forward_ios</span> </a> </span>
+        </div>
+
+        <h1 class="hero-title"> Creating intuitive user journeys and high-fidelity
+            <span class="figma-badge">
+                <span id="animated-text">Figma</span>
+            </span>
+        </h1>
+
+        <p class="hero-description">
+            Bridging the gap between complex problems and elegant solutions through intuitive user journeys and high-fidelity design. I focus on creating digital experiences that feel as good as they look.
+        </p>
+
+        <a href="./asset/pages/about.html" class="btn-about">
+            <img src="asset/img/icon.png" alt="icon" class="btn-icon" /> About Me
+        </a>
+
+    </main>
+
+    <section class="image-gallery"> 
+        <div class="gallery-container">
+            <div class="card card-left">
+                <img src="./asset/img/example1.jpg" alt="Born from Streets">
+            </div>
+            <div class="card card-center">
+                <img src="./asset/img/example2.jpg" alt="Revolution Hoodie">
+            </div>
+            <div class="card card-right">
+                <img src="./asset/img/example3.jpg" alt="Street Style">
+            </div>
+        </div>
+    </section>
+
+    <section class="id-card-section" id="credentials">
+        <div class="line-v line-left"></div>
+        <div class="line-v line-right"></div>
+        <div class="line-h line-top"></div>
+        <div class="line-h line-bottom"></div>
+
+        <div class="side-label label-left">Portfolio</div>
+        <div class="side-label label-right">Portfolio</div>
+
+        <div class="id-card-wrapper" onclick="this.classList.toggle('flipped')">
+            <div class="id-card-inner">
+                <div class="id-card-front">
+                    <img src="asset/img/front id.png" alt="Front ID" class="id-card-img">
+                </div>
+                <div class="id-card-back">
+                    <img src="asset/img/back id.png" alt="Back ID" class="id-card-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="club-full-page">
+        <h2 class="section-title">The Design Journey</h2>
+
+        <div class="list-row">
+            <div class="row-content">
+                <span class="row-label">Sketch</span>
+                <div class="row-line"></div>
+                <button class="icon-trigger" onclick="toggleSlide(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="link-icon">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="sliding-description">
+                <div class="desc-inner">
+                    <p>Show how you brainstorm. Link this to a PDF or a gallery page showing your initial "pen and paper" ideas for your Capstone project or a website layout.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-row">
+            <div class="row-content">
+                <span class="row-label">Prototype</span>
+                <div class="row-line"></div>
+                <button class="icon-trigger" onclick="toggleSlide(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="link-icon">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="sliding-description">
+                <div class="desc-inner">
+                    <p>Link this to a Figma prototype or a video of your UI in motion. It should show the "Gami" (gamified) interface before it was actually coded.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-row">
+            <div class="row-content">
+                <span class="row-label">Experience</span>
+                <div class="row-line"></div>
+                <button class="icon-trigger" onclick="toggleSlide(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="link-icon">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="sliding-description">
+                <div class="desc-inner">
+                    <p>This is where you explain your "journey." Link to a page describing your experience setting up VirtualBox networks or your role in developing your Capstone project from a lead designer/developer perspective.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-row">
+            <div class="row-content">
+                <span class="row-label">skill</span>
+                <div class="row-line"></div>
+                <button class="icon-trigger" onclick="toggleSlide(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="link-icon">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="sliding-description">
+                <div class="desc-inner">
+                    <p>Since you have specialized skills, link this to a "Technical Stack" page. List your proficiency in Python (Django), Ubuntu, and Networking with small icons or descriptions of projects where you used each tool.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-row">
+            <div class="row-content">
+                <span class="row-label">content</span>
+                <div class="row-line"></div>
+                <button class="icon-trigger" onclick="toggleSlide(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="link-icon">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="sliding-description">
+                <div class="desc-inner">
+                    <p>This is the "End Product." Link to your live GitHub repository, a hosted version of your Django web app, or a video walkthrough of your final Capstone presentation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education-section">
+    <h1 class="edu-title">ACADEMIC EXPERIENCE</h1>
+
+    <div class="timeline-wrapper">
+        <div class="timeline-item left-item">
+            <h2 class="year-text">2016</h2>
+            <p class="school-text">Queens Row Elementary School</p>
+        </div>
+        
+        <div class="timeline-item right-item">
+            <h2 class="year-text">2016 - 2020</h2>
+            <p class="school-text">City of National High School - San Nicholas</p>
+        </div>
+
+        <div class="timeline-item left-item">
+            <h2 class="year-text">2020 - 2022</h2>
+            <p class="school-text">Senior High School in San Nicholas 3</p>
+        </div>
+
+        <div class="timeline-item right-item">
+            <h2 class="year-text">Present</h2>
+            <p class="school-text">Cavite State University - Bacoor cavite</p>
+        </div>
+    </div>
+</section>
+
+    <section class="intro-section">
+        <h1 class="intro-heading">
+            Merging Technical Logic with Creative Vision
+        </h1>
+
+        <div class="intro-content">
+            <p class="intro-lead">
+                Hey, I'm Ian Rey Porras, and I'm here to turn 'what if' into 'what is.' I specialize in high-fidelity design that balances technical function with visual art, helping brands move forward by crafting digital spaces that are beautiful and built to last.
+            </p>
+            <p class="intro-text">
+                I don't just see layouts; I see user journeys. By combining a deep technical foundation with a focus on UX/UI and Brand Identity, I bridge the gap between how a product looks and how it works. Based in Bacoor, Cavite, I am dedicated to making the web more beautiful and easier to navigate—one pixel at a time.
+            </p>
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <div class="image-container">
+            <h2 class="portfolio-title">Portfolio</h2>
+        </div>
+
+        <p class="portfolio-subtitle">
+           I’m here to turn 'your' vision into 'their' experience through seamless digital architecture. From configuring Ubuntu networks to designing intuitive interfaces, I build high-fidelity spaces where technical stability meets creative intent—one pixel at a time.
+        </p>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>ianreyporras72@gmail.com</p>
+                <p>0991 384 2335 - DITO</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ianrey.porras.52" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/thisis.eyyan/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/porras-ian-rey-3172133a8/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-cta">
+                <h2>Got a project here. Interested in a collab?</h2>
+                <a href="./asset/pages/case_studies.html" class="btn-discuss">
+                    Design — Directed by Me<span>▶</span>
+                </a>
+            </div>
+
+            <div class="footer-location">
+                <p><strong>Philippines</strong></p>
+                <p>Hopeland GreenValley Molino 2,<br>Bacoor Cavite</p>
+            </div>
+        </div>
+
+        <div class="footer-big-text">
+            <h1>Let's spark an idea</h1>
+        </div>
+    </footer>
+
+    <script src="../asset/script/script.js"></script>
+</body>
+
+</html>
