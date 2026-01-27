@@ -340,8 +340,8 @@ header {
     font-weight: 900;
     line-height: 0.85;
     margin: 0;
-    letter-spacing: -2px;
-    font-family: 'Impact', 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .person-name {
@@ -385,8 +385,8 @@ header {
     padding: 0.6rem;
     font-weight: 500;
     font-size: clamp(1.5rem, 3vw, 2.2rem);
-    letter-spacing: 2px;
-    font-family: 'Impact', 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .software-icons {
@@ -790,8 +790,10 @@ header {
 
 .section-title {
   font-size: clamp(2.5rem, 10vw, 5rem);
-  font-family: 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 20px 0 40px;
+     text-transform: uppercase;
 }
 
 /* The Grid */
