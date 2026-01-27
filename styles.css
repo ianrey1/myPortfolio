@@ -629,7 +629,8 @@ header {
     font-size: 1.5rem;
     color: #000;
     z-index: 2;
-    font-family: 'MyCustomFont', sans-serif;
+    letter-spacing: 0.04rem;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .label-left {
@@ -775,7 +776,8 @@ header {
 }
 
 .section-title {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    letter-spacing: 0.04rem;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /* Scales from 1.5rem to 2.5rem */
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: 800;
@@ -808,6 +810,8 @@ header {
     font-weight: 900;
     line-height: 1;
     white-space: nowrap;
+    letter-spacing: 0.04rem;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .row-line {
@@ -915,7 +919,8 @@ header {
     line-height: 1.1;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: -1px;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
 }
 
 /* Right Column: Content */
@@ -991,7 +996,9 @@ header {
   /* Creates the vertical overlap seen in your image */
   transform: translateY(45%); 
   letter-spacing: -3px;
-  font-family: 'Impact', 'Arial Black', sans-serif;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
 }
 
 .portfolio-subtitle {
@@ -1145,7 +1152,8 @@ header {
 
 .edu-title {
     text-align: center;
-    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 0.04rem;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: clamp(2.5rem, 10vw, 5.5rem);
     margin-bottom: 4rem;
 }
