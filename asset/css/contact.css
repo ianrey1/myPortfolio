@@ -337,6 +337,7 @@ header {
     line-height: 0.9;
     margin: 0;
     text-transform: none;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /* Description - Top right */
@@ -450,5 +451,6 @@ header {
     .arrow-down {
         transform: rotate(45deg); /* Points it more toward the email on mobile */
         margin-bottom: 10px;
+         margin-right: -10rem;
     }
 }
