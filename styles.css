@@ -626,7 +626,7 @@ header {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #000;
     z-index: 2;
     letter-spacing: 0.04rem;
@@ -634,13 +634,13 @@ header {
 }
 
 .label-left {
-    left: -2%;
+    left: 3.5%;
     transform: rotate(-90deg);
     top: 13%;
 }
 
 .label-right {
-    right: -2%;
+    right: 3.5%;
     transform: rotate(90deg);
     bottom: 13%;
 }
