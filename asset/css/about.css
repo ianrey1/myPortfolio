@@ -297,12 +297,12 @@ header {
 }
 
 .about-text h1 {
-    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
     font-size: clamp(2.8rem, 8vw, 5rem);
     font-weight: 900;
     margin-bottom: 2rem;
     line-height: 0.9;
-    letter-spacing: -1px;
 }
 
 .about-text p {
@@ -519,10 +519,10 @@ header {
 }
 
 .proof-header h3 {
-    font-family: 'Impact', sans-serif;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
     font-size: clamp(1.2rem, 2.5vw, 1.5rem);
     margin-bottom: 5px;
-    letter-spacing: 1px;
 }
 
 .proof-header .subtitle {
