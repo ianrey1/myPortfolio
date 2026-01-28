@@ -1,5 +1,3 @@
-// no to copy image and text
-document.addEventListener("contextmenu", e => e.preventDefault()); 
 
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
