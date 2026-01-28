@@ -36,6 +36,9 @@
     Roboto, Helvetica, Arial, sans-serif;
     font-family: 'MyCustomFont', 'Inter', -apple-system, sans-serif;
      -webkit-tap-highlight-color: transparent;
+   -webkit-user-select: none; /* Chrome / Android */
+  -ms-user-select: none;     /* IE */
+  user-select: none;         /* Standard */
 }
 
 body {
