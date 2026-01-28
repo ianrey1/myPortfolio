@@ -39,7 +39,11 @@
   -ms-user-select: none;     /* IE */
   user-select: none;         /* Standard */
 }
-
+img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
 body {
   background-color: #EBEBEB;
   color: #000;
