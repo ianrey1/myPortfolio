@@ -19,7 +19,11 @@
   --shadow-color: rgba(0, 0, 0, 0.05);
   --transition-speed: 0.3s;
 }
-
+img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
 * {
   margin: 0;
   padding: 0;
