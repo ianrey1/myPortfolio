@@ -464,7 +464,8 @@ header {
 }
 
 .marquee-content span {
-    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
     font-size: clamp(0.85rem, 1.5vw, 1rem);
     margin: 0 20px;
     display: inline-block;
