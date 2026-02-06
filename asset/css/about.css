@@ -755,3 +755,92 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
+/*hire me*/
+/* Container Styles */
+.why-hire-me {
+  width: 100%;
+  max-width: 1200px;
+  padding: clamp(2rem, 8vw, 6rem) 1.5rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: var(--fs-lg);
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.cards-container {
+  display: grid;
+  /* Responsive: Stacks on mobile, 3 columns on desktop */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1rem, 3vw, 2.5rem);
+}
+
+/* Card Styles */
+.reveal-card {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  
+  /* Scroll Animation Logic */
+  view-timeline-name: --item-reveal;
+  view-timeline-axis: block;
+  animation: linear reveal both;
+  animation-timeline: --item-reveal;
+  animation-range: entry 5% cover 25%;
+}
+
+.reveal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(16, 54, 125, 0.3);
+}
+
+.icon-wrapper {
+  width: clamp(60px, 8vw, 85px);
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.icon-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* Optional: filter: brightness(0) invert(1); 
+     Use the filter above if your icons are black and you need them white */
+}
+
+.reveal-card h3 {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.reveal-card p {
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Keyframes for the Scroll Reveal */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
