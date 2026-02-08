@@ -910,20 +910,19 @@ header {
 }
 
 
-
 /* Container Layout */
 .intro-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 1370px;
-    gap: 60px;
+    max-width: clamp(320px, 90vw, 1370px);
+    gap: clamp(30px, 5vw, 60px);
     align-items: start;
-    padding: 0 -20px;
+    padding: 0 clamp(16px, 3vw, 20px);
 }
 
 /* Left Column: Heading */
 .intro-heading {
-    font-size: 3rem;
+    font-size: clamp(2.2rem, 4vw, 3rem);
     line-height: 1.1;
     font-weight: 800;
     text-transform: uppercase;
@@ -935,35 +934,28 @@ header {
 .intro-content {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: clamp(16px, 3vw, 24px);
 }
 
 .intro-lead {
-    font-size: 1.25rem;
+    font-size: clamp(1.05rem, 2.2vw, 1.25rem);
     font-weight: 600;
     line-height: 1.4;
-    text-align: justify; /* Justifies the lead text */
+    text-align: justify;
 }
 
 .intro-text {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2vw, 1.1rem);
     line-height: 1.6;
     color: #444;
     font-weight: 400;
-    text-align: justify; /* Justifies the main body text */
+    text-align: justify;
 }
 
-/* Mobile Responsiveness */
+/* Optional: layout switch for small screens */
 @media (max-width: 768px) {
     .intro-section {
         grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: left;
-        padding: 0 20px;
-    }
-
-    .intro-heading {
-        font-size: 2.5rem;
     }
 }
 
