@@ -8,10 +8,14 @@
     <!-- Google Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-     <!-- Anton Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- Anton Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- Anton Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <!-- Google Fonts -->
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -120,34 +124,54 @@
 
     </section>
 
-    <section class="recent-projects">
-        <div class="header-line"></div>
-        <h1 class="section-title">Relevant Projects</h1>
 
-        <div class="project-grid" id="projectGrid">
-            <div class="grid-item"><img src="../img/10 design.png" alt="Design 1"></div>
-            <div class="grid-item"><img src="../img/8 design.png" alt="Design 2"></div>
-            <div class="grid-item"><img src="../img/2 design.png" alt="Design 3"></div>
-            <div class="grid-item"><img src="../img/6 design.png" alt="Design 4"></div>
-            <div class="grid-item"><img src="../img/4 design.png" alt="Design 5"></div>
-            <div class="grid-item"><img src="../img/1 design.png" alt="Design 6"></div>
+<section class="portfolio-section">
+    <h2 class="section-title">RELEVANT PROJECT</h2>
 
-            <div class="grid-item hidden extra-content"><img src="../img/5 design.png" alt="Design 7"></div>
-            <div class="grid-item hidden extra-content"><img src="../img/3 design.png" alt="Design 8"></div>
-            <div class="grid-item hidden extra-content"><img src="../img/9 design.png" alt="Design 9"></div>
-            <div class="grid-item hidden extra-content"><img src="../img/7 design.png" alt="Design 10"></div>
-            <div class="grid-item hidden extra-content"><img src="../img/11 design.png" alt="Design 11"></div>
-            <div class="grid-item hidden extra-content"><img src="../img/12 design.png" alt="Design 12"></div>
-        </div>
-
-        <button class="cta-button" id="loadMoreBtn">See the 20% Growth</button>
-    </section>
-
-    <div class="zoom-overlay" id="zoomOverlay">
-        <img src="" alt="Zoomed View" id="zoomedImg">
+    <div class="filter-nav">
+        <span class="filter-item active" data-filter="all">All</span>
+        <span class="filter-item" data-filter="website">Website</span>
+        <span class="filter-item" data-filter="visual-archive">Visual Archive</span>
+        <span class="filter-item" data-filter="kanvas">Kanvas</span>
     </div>
 
+    <div class="project-grid">
+        <!-- Projects will be dynamically inserted here by JavaScript -->
+    </div>
 
+    <div class="footer-action">
+        <button class="growth-btn">See the 20% Growth</button>
+    </div>
+
+<div id="projectOverlay" class="overlay">
+    <div class="overlay-content">
+        <button class="close-btn" onclick="closeProject()">&times;</button>
+
+        <div class="detail-layout">
+            <div class="detail-main">
+                <div class="main-image-container">
+                    <img src="" class="main-slide" alt="Main View">
+                    <button class="zoom-btn" onclick="toggleFullscreen()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <polyline points="9 21 3 21 3 15"></polyline>
+                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="sub-images"></div>
+            </div>
+
+            <div class="detail-sidebar">
+                <h3 class="project-title"></h3>
+                <p class="project-desc"></p>
+                <span class="tag-badge project-tag"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 
     <footer class="footer-section">
         <div class="footer-top">
@@ -185,36 +209,10 @@
             <h1>Let's spark an idea</h1>
         </div>
     </footer>
-    <script>// 1. Zoom Logic
-        const gridItems = document.querySelectorAll('.grid-item img');
-        const overlay = document.getElementById('zoomOverlay');
-        const zoomedImg = document.getElementById('zoomedImg');
 
-        gridItems.forEach(img => {
-            img.addEventListener('click', () => {
-                zoomedImg.src = img.src; // Set overlay image to clicked image source
-                overlay.style.display = 'flex';
-            });
-        });
 
-        overlay.addEventListener('click', () => {
-            overlay.style.display = 'none'; // Close overlay
-        });
 
-        // 2. Button Toggle Logic (Show 7th Image)
-        const loadBtn = document.getElementById('loadMoreBtn');
-        const extraImage = document.getElementById('extraImage');
 
-        loadBtn.addEventListener('click', () => {
-            extraImage.classList.toggle('hidden');
-
-            // Optional: Change button text
-            if (extraImage.classList.contains('hidden')) {
-                loadBtn.innerText = "See the 20% Growth";
-            } else {
-                loadBtn.innerText = "Show Less";
-            }
-        });</script>
 
     <script src="../script/script.js"></script>
 </body>
