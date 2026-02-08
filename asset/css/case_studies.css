@@ -733,8 +733,9 @@ header {
 .portfolio-section {
   padding: clamp(2rem, 5vw, 5rem);
   font-family: 'Inter', sans-serif;
-  background-color: #e5e5e5;
+
   text-align: center;
+  margin-top: -20rem;
 }
 
 .section-title {
@@ -988,11 +989,13 @@ header {
 
 .detail-sidebar h3 {
   font-size: clamp(1.5rem, 4vw, 3rem);
-  font-weight: 800;
+  font-weight: 500;
   margin-top: 0;
   margin-bottom: clamp(1rem, 2vw, 1.5rem);
   line-height: 1.1;
   color: #222;
+    letter-spacing: 0.04rem;
+    font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .detail-sidebar p {
