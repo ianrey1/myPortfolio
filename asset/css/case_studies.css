@@ -735,7 +735,12 @@ header {
   font-family: 'Inter', sans-serif;
 
   text-align: center;
-  margin-top: -20rem;
+
+}
+@media (max-width: 768px) {
+  .portfolio-section {
+    margin-top: -40vh;
+  }
 }
 
 .section-title {
