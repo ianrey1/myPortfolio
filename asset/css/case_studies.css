@@ -682,21 +682,7 @@ header {
   padding-left: clamp(1rem, 5vw, 4rem);
   padding-right: clamp(1rem, 5vw, 4rem);
 }
-/* Sections fade in and slide up */
-.intro-section,
-.portfolio-section,
-.footer-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
 
-.intro-section.in-view,
-.portfolio-section.in-view,
-.footer-section.in-view {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* Optional: stagger child elements for intro-content and footer-top */
 .intro-content > *,
