@@ -316,8 +316,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-// Project data with categories and randomization flag
+// Project data with categories, randomization flag, and live demo URLs
 const projectData = {
     1: {
         title: "A Holistic Healthy Food",
@@ -329,11 +328,12 @@ const projectData = {
             "../img/10-1 design.png",
             "../img/10-2 design.png",
             "../img/10-3 design.png"
-        ]
+        ],
+
     },
     2: {
         title: "The Precision of Night",
-        description: "The final chapter of the story is the Ritual. The pouring of the soy sauce, the hand-rolling of the Temaki. We move from the \"High-End\" spectacle back to the \"Comfort\" of a meal crafted fresh. It’s the \"Sanctuary\" mentioned in the copy—a place to escape the city noise and focus on a single, perfect bite.",
+        description: "The final chapter of the story is the Ritual. The pouring of the soy sauce, the hand-rolling of the Temaki. We move from the \"High-End\" spectacle back to the \"Comfort\" of a meal crafted fresh. It's the \"Sanctuary\" mentioned in the copy—a place to escape the city noise and focus on a single, perfect bite.",
         tag: "FIGMA",
         category: "website",
         images: [
@@ -341,7 +341,8 @@ const projectData = {
             "../img/8-1 design.png",
             "../img/8-2 design.png",
             "../img/8-3 design.png"
-        ]
+        ],
+
     },
     3: {
         title: "The Unfair Advantage",
@@ -353,7 +354,8 @@ const projectData = {
             "../img/2-1 design.png",
             "../img/2-2 design.png",
             "../img/2-3 design.png"
-        ]
+        ],
+
     },
     4: {
         title: "The Urban Manifesto: Scaling the Concrete Jungle",
@@ -365,7 +367,8 @@ const projectData = {
             "../img/13-1 design.png",
             "../img/13-2 design.png",
             "../img/13-3 design.png"
-        ]
+        ],
+
     },
     5: {
         title: "Defining Modern Elegance",
@@ -377,11 +380,12 @@ const projectData = {
             "../img/4-1 design.png",
             "../img/4-2 design.png",
             "../img/4-3 design.png"
-        ]
+        ],
+
     },
     6: {
         title: "The Aura Build Story",
-        description: "We didn't start Aura Build just to assemble structures; we started it to redefine how you experience home. By merging cutting-edge frame technology with a passion for sustainable, modern aesthetics, we’ve spent the last 12 years turning complex dreams into precision-engineered realities. For us, every square meter is an opportunity to tell your story through light, glass, and steel.",
+        description: "We didn't start Aura Build just to assemble structures; we started it to redefine how you experience home. By merging cutting-edge frame technology with a passion for sustainable, modern aesthetics, we've spent the last 12 years turning complex dreams into precision-engineered realities. For us, every square meter is an opportunity to tell your story through light, glass, and steel.",
         tag: "FIGMA",
         category: "website",
         images: [
@@ -389,11 +393,12 @@ const projectData = {
             "../img/1-1 design.png",
             "../img/1-2 design.png",
             "../img/1-3 design.png"
-        ]
+        ],
+
     },
     7: {
         title: "Everything Your Pet Needs & Loves",
-        description: "The PawSome story begins with a simple promise: to provide a one-stop destination where quality meets affection. The design uses warm, approachable tones and a focal hero image of a cat and dog together to immediately signal inclusivity for all pet owners. This isn't just a retail site; it’s a tribute to the \"Premium quality your pets deserve\" at prices that respect the owner.",
+        description: "The PawSome story begins with a simple promise: to provide a one-stop destination where quality meets affection. The design uses warm, approachable tones and a focal hero image of a cat and dog together to immediately signal inclusivity for all pet owners. This isn't just a retail site; it's a tribute to the \"Premium quality your pets deserve\" at prices that respect the owner.",
         tag: "FIGMA",
         category: "website",
         images: [
@@ -401,7 +406,8 @@ const projectData = {
             "../img/3-1 design.png",
             "../img/3-2 design.png",
             "../img/3-3 design.png"
-        ]
+        ],
+
     },
     8: {
         title: "More Than a Bag—A Street Movement",
@@ -413,11 +419,12 @@ const projectData = {
             "../img/6-1 design.png",
             "../img/6-2 design.png",
             "../img/6-3 design.png"
-        ]
+        ],
+
     },
     9: {
         title: "Moving the World, One Shipment at a Time",
-        description: "CargoFlow was built on the promise of relentless reliability. With over 2.5 million shipments delivered across 150+ countries, we have evolved from a local fleet into a global logistics powerhouse. Our mission is simple: to provide end-to-end supply chain solutions—from air and sea freight to secure warehousing—tailored specifically to your business needs. We don’t just move cargo; we move your business forward.",
+        description: "CargoFlow was built on the promise of relentless reliability. With over 2.5 million shipments delivered across 150+ countries, we have evolved from a local fleet into a global logistics powerhouse. Our mission is simple: to provide end-to-end supply chain solutions—from air and sea freight to secure warehousing—tailored specifically to your business needs. We don't just move cargo; we move your business forward.",
         tag: "FIGMA",
         category: "website",
         images: [
@@ -425,11 +432,12 @@ const projectData = {
             "../img/9-1 design.png",
             "../img/9-2 design.png",
             "../img/9-3 design.png"
-        ]
+        ],
+
     },
     10: {
         title: "The Future of Intelligence.",
-        description: "Innovation isn’t just about what we build; it’s about why we build it. With the iPhone 17, we have reimagined the relationship between human and machine. Powered by the A19 Pro Chip—our most powerful chip ever—and the new 16-core Neural Engine, we aren’t just giving you a smartphone. We are giving you Apple Intelligence: a refined, intuitive experience where every detail is reimagined to empower your everyday life.",
+        description: "Innovation isn't just about what we build; it's about why we build it. With the iPhone 17, we have reimagined the relationship between human and machine. Powered by the A19 Pro Chip—our most powerful chip ever—and the new 16-core Neural Engine, we aren't just giving you a smartphone. We are giving you Apple Intelligence: a refined, intuitive experience where every detail is reimagined to empower your everyday life.",
         tag: "FIGMA",
         category: "website",
         images: [
@@ -437,7 +445,8 @@ const projectData = {
             "../img/5-1 design.png",
             "../img/5-2 design.png",
             "../img/5-3 design.png"
-        ]
+        ],
+
     },
     11: {
         title: "The Human-Centric Tech Leader",
@@ -449,7 +458,8 @@ const projectData = {
             "../img/12-1 design.png",
             "../img/12-2 design.png",
             "../img/12-3 design.png"
-        ]
+        ],
+
     },
     12: {
         title: "A Journey Through Security Operations",
@@ -471,23 +481,23 @@ const projectData = {
             "../img/book2.png",
             "../img/book3.png",
             "../img/book4.png",
-            "../img/book5.png",
-            "../img/book6.png"
+            // "../img/book5.png",
+            // "../img/book6.png"
         ]
     },
     14: {
         title: "The Mood",
-        description: "The image radiates \"Main Character Energy.\" The text describes a personality built from \"open tabs\" and \"pixelated memories,\" suggesting a digital-native identity that is confident, self-aware, and highly curated. It’s lighthearted, stylish, and heavily influenced by 2000s-era pop culture.",
-        tag: "canva Design",
+        description: "The image radiates \"Main Character Energy.\" The text describes a personality built from \"open tabs\" and \"pixelated memories,\" suggesting a digital-native identity that is confident, self-aware, and highly curated. It's lighthearted, stylish, and heavily influenced by 2000s-era pop culture.",
+        tag: "Poster",
         category: "kanvas",
         images: [
             "../img/poster1.png",
         ]
     },
     15: {
-        title: "THE Thriller",
+        title: "The Thriller",
         description: "This design leans into a gritty, psychological aesthetic. It features a central male figure surrounded by blurred, ghostly silhouettes in a cold, industrial gray space. A distorted chain-link fence overlay in the foreground adds a feeling of being trapped or watched, while the monochrome palette enhances the \"suspense\" theme.",
-        tag: "Canva Design",
+        tag: "Poster",
         category: "kanvas",
         images: [
             "../img/poster2.png",
@@ -496,12 +506,62 @@ const projectData = {
     16: {
         title: "MONOCHROME VESTIGE",
         description: "This image is a striking example of post-modern surrealism. It features a man in a sharp, double-breasted grey suit leaning against a vintage Vespa, but his head is replaced by a giant, paper-cutout style set of bright red lips. The backdrop is a weathered concrete wall, creating a neutral \"monochrome\" canvas that makes the red elements pop with intense energy.",
-        tag: "Canva Design",
+        tag: "Poster",
         category: "kanvas",
         images: [
             "../img/poster3.png",
         ]
-    }
+    },
+    17: {
+    title: "Sonance",
+    description: "The story begins not with a product, but with a feeling: \"Sound That Moves You.\" The website introduces the Sonance One as a ghost in the room—something \"engineered for clarity\" but designed to \"disappear.\" The opening scene tells the user that they don’t need more clutter; they need an experience that fits seamlessly into their existing life. It’s an invitation to upgrade their environment without changing their aesthetic.",
+    tag: "Canva Website",
+    category: "cansite",
+    images: [
+        "../img/cansite1.png",
+        "../img/cansite1-2.png",
+        "../img/cansite1-3.png",
+        "../img/cansite1-4.png"
+    ],
+    liveDemoUrl: "https://twippy-and-i.my.canva.site/ssonance" 
+    },
+    18: {
+    title: "Jose Rizal Story",
+    description: "The story begins not with a product, but with a feeling: \"Sound That Moves You.\" The website introduces the Sonance One as a ghost in the room—something \"engineered for clarity\" but designed to \"disappear.\" The opening scene tells the user that they don’t need more clutter; they need an experience that fits seamlessly into their existing life. It’s an invitation to upgrade their environment without changing their aesthetic.",
+    tag: "Digital Zine",
+    category: "kanvas",
+    images: [
+        "../img/digitalzine1.png",
+        "../img/digitalzine2.png",
+        "../img/digitalzine3.png",
+        "../img/digitalzine4.png"
+    ]
+    },
+    19: {
+    title: "VisionCraft: The Digital Renaissance",
+    description: "This collection of images represents a bold, multi-disciplinary zine that merges the structured world of systems architecture with the fluid world of pop culture and art. Using a \"collage-maximalist\" aesthetic, the project explores how technical concepts—like mapping solutions and system evaluation—intersect with human creativity and historical philosophy.",
+    tag: "Zine",
+    category: "kanvas",
+    images: [
+        "../img/zine1.png",
+        "../img/zine2.png",
+        "../img/zine3.png",
+        "../img/zine4.png"
+    ]
+    },
+    20: {
+    title: "The \"Transformation\" Narrative",
+    description: "In a world of shortcuts and \"quick fixes,\" IronForge stands as a sanctuary for those who choose the hard road. Our story isn't written in ink, but in sweat and iron. We provide the tools, the community, and the \"Battle Plan,\" but you provide the soul. Whether you are a beginner picking up your first plate or a competitor prepping for the stage.",
+    tag: "Canva Website",
+    category: "cansite",
+    images: [
+        "../img/cansite2.png",
+        "../img/cansite2-1.png",
+        "../img/cansite2-3.png",
+        "../img/cansite2-4.png"
+    ],
+    liveDemoUrl: "https://twippy-and-i.my.canva.site/your-paragraph-text" 
+    },       
 };
 
 // Global variables
@@ -546,6 +606,11 @@ function renderProjects(projects) {
         
         projectCard.innerHTML = `
             <img src="${project.images[0]}" alt="${project.title}">
+            <div class="project-info-overlay">
+                <h3>${project.title}</h3>
+                <p>${project.description.substring(0, 60)}...</p>
+                <span class="tag-badge">${project.tag}</span>
+            </div>
         `;
         
         projectGrid.appendChild(projectCard);
@@ -644,6 +709,16 @@ function openProject(id) {
     overlay.querySelector(".project-title").textContent = project.title;
     overlay.querySelector(".project-desc").textContent = project.description;
     overlay.querySelector(".project-tag").textContent = project.tag;
+    
+    // Update Live Demo Button
+    const liveDemoBtn = overlay.querySelector(".live-demo-btn");
+    if (project.liveDemoUrl) {
+        liveDemoBtn.href = project.liveDemoUrl;
+        liveDemoBtn.style.display = "inline-flex";
+    } else {
+        liveDemoBtn.href = "#";
+        liveDemoBtn.style.display = "none";
+    }
 
     const mainImage = overlay.querySelector(".main-slide");
     const subImagesContainer = overlay.querySelector(".sub-images");
@@ -746,7 +821,38 @@ function handleImageClick(e) {
 // ------------------------------
 // Toggle Fullscreen
 // ------------------------------
-
+function toggleFullscreen() {
+    const container = document.querySelector('.main-image-container');
+    const mainImage = document.querySelector('.main-slide');
+    
+    if (!document.fullscreenElement) {
+        // Enter fullscreen
+        if (container.requestFullscreen) {
+            container.requestFullscreen();
+        } else if (container.webkitRequestFullscreen) {
+            container.webkitRequestFullscreen();
+        } else if (container.msRequestFullscreen) {
+            container.msRequestFullscreen();
+        }
+        isFullscreen = true;
+        container.classList.add('fullscreen');
+        mainImage.classList.add('fullscreen');
+        document.body.classList.add('fullscreen-mode');
+    } else {
+        // Exit fullscreen
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+        isFullscreen = false;
+        container.classList.remove('fullscreen');
+        mainImage.classList.remove('fullscreen');
+        document.body.classList.remove('fullscreen-mode');
+    }
+}
 
 // ------------------------------
 // Close Overlay
@@ -811,45 +917,105 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+    
+    // Add CSS for live demo button
+    const style = document.createElement('style');
+    style.textContent = `
+        .live-demo-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .live-demo-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            color: white;
+        }
+        
+        .live-demo-btn:active {
+            transform: translateY(0);
+        }
+        
+        .live-demo-btn[href="#"] {
+            display: none;
+        }
+        
+        .project-info-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .project-card:hover .project-info-overlay {
+            opacity: 1;
+        }
+        
+        .project-info-overlay h3 {
+            margin: 0 0 8px 0;
+            font-size: 16px;
+        }
+        
+        .project-info-overlay p {
+            margin: 0 0 8px 0;
+            font-size: 12px;
+            opacity: 0.9;
+        }
+    `;
+    document.head.appendChild(style);
 });
 
-
-// Simple version - just zoom from center of clicked element
+// Fullscreen toggle with zoom effect
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.zoom-btn, .main-slide').forEach(element => {
         element.addEventListener('click', function(e) {
             e.stopPropagation();
             
-            const container = this.closest('.main-image-container');
-            const rect = container.getBoundingClientRect();
-            
-            // Set animation origin to center of clicked element
-            container.style.setProperty('--click-x', '50%');
-            container.style.setProperty('--click-y', '50%');
-            
-            // Toggle fullscreen
-            container.classList.toggle('fullscreen');
-            container.querySelector('.main-slide').classList.toggle('fullscreen');
-            document.body.classList.toggle('fullscreen-mode');
-            
-            // Add/remove close button
-            if (container.classList.contains('fullscreen')) {
-                const closeBtn = document.createElement('button');
-                closeBtn.className = 'close-fullscreen-btn';
-                closeBtn.innerHTML = '×';
-                closeBtn.onclick = () => {
-                    container.classList.remove('fullscreen');
-                    container.querySelector('.main-slide').classList.remove('fullscreen');
-                    document.body.classList.remove('fullscreen-mode');
-                    closeBtn.remove();
-                };
-                document.body.appendChild(closeBtn);
+            if (isFullscreen) {
+                toggleFullscreen();
             } else {
-                const closeBtn = document.querySelector('.close-fullscreen-btn');
-                if (closeBtn) closeBtn.remove();
+                toggleFullscreen();
             }
         });
     });
+    
+    // Listen for fullscreen change events
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+    document.addEventListener('msfullscreenchange', handleFullscreenChange);
 });
 
-
+function handleFullscreenChange() {
+    const container = document.querySelector('.main-image-container');
+    const mainImage = document.querySelector('.main-slide');
+    
+    isFullscreen = !!document.fullscreenElement || 
+                   !!document.webkitFullscreenElement || 
+                   !!document.msFullscreenElement;
+    
+    if (isFullscreen) {
+        container.classList.add('fullscreen');
+        mainImage.classList.add('fullscreen');
+        document.body.classList.add('fullscreen-mode');
+    } else {
+        container.classList.remove('fullscreen');
+        mainImage.classList.remove('fullscreen');
+        document.body.classList.remove('fullscreen-mode');
+    }
+}
