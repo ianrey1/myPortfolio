@@ -124,13 +124,13 @@
 
     </section>
 
-
 <section class="portfolio-section">
     <h2 class="section-title">RELEVANT PROJECT</h2>
 
     <div class="filter-nav">
         <span class="filter-item active" data-filter="all">All</span>
         <span class="filter-item" data-filter="website">Website</span>
+        <span class="filter-item" data-filter="cansite">Cansite</span>
         <span class="filter-item" data-filter="visual-archive">Visual Archive</span>
         <span class="filter-item" data-filter="kanvas">Kanvas</span>
     </div>
@@ -143,34 +143,36 @@
         <button class="growth-btn">See the 20% Growth</button>
     </div>
 
-<div id="projectOverlay" class="overlay">
-    <div class="overlay-content">
-        <button class="close-btn" onclick="closeProject()">&times;</button>
+    <div id="projectOverlay" class="overlay">
+        <div class="overlay-content">
+            <button class="close-btn" onclick="closeProject()">&times;</button>
 
-        <div class="detail-layout">
-            <div class="detail-main">
-                <div class="main-image-container">
-                    <img src="" class="main-slide" alt="Main View">
-                    <button class="zoom-btn" onclick="toggleFullscreen()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <polyline points="9 21 3 21 3 15"></polyline>
-                            <line x1="21" y1="3" x2="14" y2="10"></line>
-                            <line x1="3" y1="21" x2="10" y2="14"></line>
-                        </svg>
-                    </button>
+            <div class="detail-layout">
+                <div class="detail-main">
+                    <div class="main-image-container">
+                        <img src="" class="main-slide" alt="Main View">
+
+                    </div>
+                    <div class="sub-images"></div>
                 </div>
-                <div class="sub-images"></div>
-            </div>
 
-            <div class="detail-sidebar">
-                <h3 class="project-title"></h3>
-                <p class="project-desc"></p>
-                <span class="tag-badge project-tag"></span>
+<div class="detail-sidebar">
+    <h3 class="project-title"></h3>
+    <p class="project-desc"></p>
+    <span class="tag-badge project-tag"></span>
+    <!-- Make sure this button exists -->
+    <a href="https://twippy-and-i.my.canva.site/ssonance" class="live-demo-btn" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        Live Demo
+    </a>
+</div>
             </div>
         </div>
     </div>
-</div>
 </section>
 
     <footer class="footer-section">
