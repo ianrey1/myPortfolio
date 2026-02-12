@@ -531,10 +531,10 @@ const projectData = {
     tag: "Digital Zine",
     category: "kanvas",
     images: [
-        "../img/digitalzine1.png",
-        "../img/digitalzine2.png",
-        "../img/digitalzine3.png",
-        "../img/digitalzine4.png"
+        "../img/digitalZine1.png",
+        "../img/digitalZine2.png",
+        "../img/digitalZine3.png",
+        "../img/digitalZine4.png"
     ]
     },
     19: {
